@@ -1,0 +1,25 @@
+import logo from './logo.svg';
+import './App.css';
+
+const Person = (props) => {
+  return (
+    <>
+      <h1>Name: {props.name}</h1>
+      <h2>Last Name: {props.lastName}</h2>
+      <h2>Age: 20</h2>
+    </>
+  )
+}
+
+const App = () => {
+
+  return (
+    <div className="App">
+      <Person name={'John'} lastName={'Doe'} />
+      <Person name={'Bro'} lastName={'Dre'}/>
+      
+    </div>
+  );
+}
+
+export default App;
